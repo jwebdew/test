@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세미네부엌 플랫폼</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        body {
+            color: #333;
+            line-height: 1;
+        }
+        header {
+            height: 100px;
+            border-bottom: 1px solid #eee;
+        }
+        header .inner {
+            width: calc(100% - 180px);
+            height: 100%;
+             
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .inner ul {
+            display: flex;
+            align-items: center;
+        }
+        header .inner nav ul li {
+            margin: 0 30px;
+        }
+        header .inner nav ul li a {
+            display: flex;
+            align-items: center;
+        }
+        header .inner .right_menu li:nth-child(1) {
+            margin-right: 20px;
+        }
+
+        /* 🎈.main_visual */
+        .main_visual {
+            width: calc(100% - 180px);
+            margin: 0 auto;
+        }
+        .main_visual img {
+            width: 100%;
+        }
+
+        /* 🎈.cont01 */
+        .cont01 {
+            padding: 80px 0;
+        }
+        .cont01 .inner {
+            width: 1440px;
+            margin: 0 auto; 
+        }
+        .cont01 .inner h3 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .cont01 .inner .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .cont01 .inner .list .item {
+            width: 342px;
+            margin-bottom: 50px;
+        }
+        .cont01 .inner .list .item figure {
+            width: 342px;
+            height: 342px;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .cont01 .inner .list .item:hover figure img {
+            transform: scale(1.2);
+            /* 선택자 확대(1.2배만큼) */
+        }
+        .cont01 .inner .list .item figure img {
+            width: 100%;
+            transition: 0.7s;
+        }
+        .cont01 .inner .list .item div ul li {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 40px;
+             
+        }
+        .cont01 .inner .list .item div ul li img {
+            vertical-align: middle;
+            /* 인라인요소가 있을 때 수직정렬
+            inline, 
+            display:inline, 
+            display:inline-block 
+            */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/semie-cooking-logo.svg" alt="세미네부엌" />
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">요리 상담소</a></li>
+                    <li><a href="#">요리법 연구소</a></li>
+                    <li><a href="#">요리해요</a></li>
+                    <li><a href="#">맛있는 추억을 그리다</a></li>
+                    <li><a href="#"><img src="img/semie-wow.svg" alt="wow" />이벤트</a></li>
+                </ul>
+            </nav>
+            <ul class="right_menu">
+                <li><a href="#">검색</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul><!-- .right_menu end -->
+        </div><!-- .inner end -->
+    </header>
+
+    <section class="main_visual">
+        <img src="img/main_visual.jpg" alt="나를 즐겁게 한 요리" />
+    </section><!-- .main_visual end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <h3>우리 함께 요리해볼까요?</h3>
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img01.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 1 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img02.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 2 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img03.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 3 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img08.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 4 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img04.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 6 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img05.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 8 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img06.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 8 end -->
+                <div class="item">
+                    <figure>
+                        <img src="img/cont01_img07.png" alt="바다의 채소, 미역 이렇게 먹어요" />
+                    </figure>
+                    <div>
+                        <h4>바다의 채소, 미역 이렇게 먹어요</h4>
+                        <p>바삭바삭 미역튀각김밥</p>
+                        <ul>
+                            <li>
+                                <img src="img/heart.png" alt="좋아요" />
+                                <span>22</span>
+                            </li>
+                            <li>
+                                <img src="img/message.png" alt="댓글" />
+                                <span>4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .item 8 end -->
+
+            </div><!-- .list end -->
+
+        </div><!-- .inner end -->
+    </section><!-- .cont01 end -->
+</body>
+</html>
